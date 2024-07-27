@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Mi Electro</title>
+	<link rel="stylesheet" type="text/css" href="scss/mi-electro.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="mi-electro.js"></script>
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <nav class="main-nav" aria-label="Main">
+                <div class="nav-menu__logo">
+                    <img src="img/logo.svg" alt="logo_xiaomi">
+                </div>
+                <ul class="main-nav__list">
+                  <li class="main-nav__item">
+                    <a href="about-the-product__section" class="main-nav__link">О продукте</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="scooter-design__section" class="main-nav__link">Внешний вид</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Безопасность</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Отзывы</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">FAQ</a>
+                  </li>
+                </ul>
+                <div class="nav-menu__button">
+                    <button class="nav-menu__button-buy">Купить</button>
+                </div>
+              </nav>
+            <!-- <nav class="nav-menu">
+                <div class="nav-menu__logo">
+                    <img src="img/logo.svg" alt="logo_xiaomi">
+                </div>
+                <div class="nav-menu__link">
+                    <ul>
+                        <li><a href="#" class="link">О продукте</a></li>
+                        <li><a href="#" class="link">Внешний вид</a></li>
+                        <li><a href="#" class="link">Безопасность</a></li>
+                        <li><a href="#" class="link">Отзывы</a></li>
+                        <li><a href="#" class="link">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="nav-menu__button">
+                    <button class="nav-menu__button-buy">Купить</button>
+                </div>
+            </nav> -->
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <section id="main__section" class="main__section">
+                <div class="main__scooter-in-light-theme__img">
+                    <img src="img/scooter-in-light.svg" alt="scooter_in_main_view">
+                </div>
+                <!-- <section class="main-view-scooter-in-dark-theme__img">
+                    <img src="img/scooter-in-dark.svg" alt="scooter_in_main_view">
+                </section> -->
+                <div class="main__information">
+                    <div class="main__text">
+                        <h1 class="main__title">Стильный электросамокат с мощным аккумулятором</h1>
+                        <p class="main__subtitle">Улучшенная производительность для дальних путешествий. Работает так же просто, как и выглядит.</p>
+                    </div>
+                    <!-- <div class="main__text">
+                        <p class="main__text__p">Улучшенная производительность для дальних путешествий. Работает так же просто, как и выглядит.</p>
+                    </div> -->
+                    <div class="main__button">
+                        <button id="themeToggle">Переключить тему</button>
+                    </div>
+                </div>
+            </section>
+            <section id="about-the-product__section" class="about-the-product__section">
+                <div class="about-the-product__title">
+                    <h2 class="about-the-product__title__h">Мощная батарея и экономичный расход заряда позволяют преодолевать расстояния до 45 км</h2>
+                </div>
+                <aside class="about-the-product__infomration">
+                    <div class="about-the-product__speed">
+                        <a href="#" class="about-the-product__links">Три режима скорости</a>
+                        <p class="about-the-product__infomration__p">Три режима езды позволяют почуствовать себя комфортно в любой ситуации. Режим «S» увеличитвает скорость, если опаздываете на работу.  Во время прогулки по парку активируйте режим «D». Включите режим «Пешеход», когда двигаетесь по оживлённой улице.</p>
+                    </div>
+                    <div class="about-the-product__energy">
+                        <a href="#" class="about-the-product__links">Система восстановления энергии</a>
+                        <p class="about-the-product__infomration__p">Во время торможения и движения по инерции система преобразовывает кинетическую энергию в электрическую, позволяя увеличить общий запас хода самоката.</p>
+                    </div>
+                    <div class="about-the-product__battery">
+                        <a href="#" class="about-the-product__links">Мощная батарея</a>
+                        <p class="about-the-product__infomration__p">Самокат оснащен аккумулятором емкостью 12 800 мАч. Это позволяет преодолевать расстояния до 45 км без подзарядки.</p>
+                    </div>
+                </aside>
+                <div class="about-the-product__img">
+                    <img class="about-the-product__img__one" src="img/one-img-for-secod-block.svg" alt="img">
+                    <img class="about-the-product__img__two" src="img/two-img-for-secod-block.svg" alt="img">
+                    <img class="about-the-product__img__path" src="img/first-path.svg" alt="img">
+                </div>
+            </section>
+            <article class="delimiter">
+                <div class="delimiter__logo__img">
+                    <img src="img/wight-logo.svg" alt="logo">
+                </div>
+                <div class="delimiter__text">
+                    <h3 class="delimiter__title">Высокая скорость передвижения</h3>
+                    <h4 class="delimiter__subtitle">Двигатель мощностью до 600 Вт позволяет развивать скорость до 25 км/ч.</h4>
+                </div>
+            </article>
+            <section id="scooter-design__section" class="scooter-design__section">
+                <div class="scooter-design__title">
+                    <h2 class="scooter-design__title__h">Лаконичный современный дизайн, в котором нет ничего лишнего</h2>
+                </div>
+                <div class="scooter-design__pictures">
+                    <img src="img/design.svg" alt="design">
+                    <img src="img/control-panel.svg" alt="control-panel">
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
