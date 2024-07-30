@@ -1,0 +1,376 @@
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../fonts/Gilroy-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("../fonts/Gilroy-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("../fonts/Gilroy-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1800px;
+  margin: 0 auto;
+}
+
+body {
+  position: relative;
+  width: 1920px;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-size: 32px;
+  background-image: linear-gradient(220deg, hsl(16, 100%, 53%) 0%, hsl(15, 100%, 59%) 9%, hsl(16, 100%, 64%) 16%, hsl(16, 100%, 68%) 23%, hsl(17, 100%, 73%) 30%, hsl(17, 100%, 78%) 38%, hsl(17, 100%, 83%) 47%, hsl(16, 100%, 87%) 58%, hsl(15, 76%, 91%) 73%, hsl(0, 0%, 95%) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.light-theme {
+  --color-primary: url("../img/light-desktop.svg") center / cover no-repeat;
+  --font-color: #151515;
+}
+
+.dark-theme {
+  --color-primary: url("../img/dark-desktop.svg") center / cover no-repeat;
+  --font-color: #F1F1F1;
+}
+
+nav {
+  position: fixed;
+  top: 20px;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  width: 1700px;
+  height: 100px;
+  line-height: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: "Gilroy-Light", sans-serif;
+}
+nav .main-nav__list {
+  display: flex;
+  margin-top: -5px;
+  font-size: 22px;
+  text-underline-offset: 10px;
+}
+nav .main-nav__list .main-nav__item {
+  list-style-type: none;
+}
+nav .main-nav__list .main-nav__item .main-nav__link {
+  text-decoration: none;
+  font-weight: 400;
+  color: #151515;
+  padding-bottom: 15px;
+  margin: 0 25px;
+  transition: 0.3s ease;
+}
+
+.nav-menu__button {
+  float: right;
+  margin-right: 0;
+  margin-left: auto;
+  margin-top: -10px;
+  font-family: "Gilroy-Medium", sans-serif;
+}
+.nav-menu__button .nav-menu__button-buy {
+  width: 170px;
+  height: 70px;
+  font-size: 18px;
+  background-color: #F1F1F1;
+  border-style: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+main {
+  z-index: 20;
+}
+main .main__scooter-in-light-theme__img {
+  float: right;
+  margin-right: -60px;
+  margin-left: auto;
+  margin-top: 0;
+}
+main .main__scooter-in-dark-theme__img {
+  float: right;
+  margin-right: -51px;
+  margin-left: auto;
+  margin-top: 0;
+}
+
+.main__information {
+  position: absolute;
+  margin-left: 50px;
+  margin-right: auto;
+  margin-top: 250px;
+  font-family: "Gilroy-Medium", sans-serif;
+}
+.main__information .main__title {
+  width: 1220px;
+  font-size: 90px;
+  color: #FF4C0D;
+}
+.main__information .main__subtitle {
+  width: 500px;
+  margin-top: -40px;
+  font-size: 30px;
+  color: var(--font-color);
+}
+
+.light-theme .main-view-scooter-in-light-theme__img {
+  display: none;
+}
+
+.dark-theme .main-view-scooter-in-dark-theme__img {
+  display: none;
+}
+
+.about-the-product__section {
+  margin-top: 110px;
+  margin-left: 50px;
+  margin-right: auto;
+  font-family: "Gilroy-Medium", sans-serif;
+}
+.about-the-product__section .about-the-product__title {
+  width: 1400px;
+  font-size: 45px;
+}
+.about-the-product__section .about-the-product__links {
+  font-family: "Gilroy-Medium", sans-serif;
+}
+.about-the-product__section .about-the-product__infomration__p {
+  font-family: "Gilroy-Light", sans-serif;
+}
+
+.about-the-product__infomration {
+  display: grid;
+  grid-template-columns: repeat(3, 34%);
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: 50px;
+}
+.about-the-product__infomration .about-the-product__links {
+  font-size: 24px;
+  text-decoration: underline;
+  text-underline-offset: 27px;
+  text-decoration-thickness: 5px;
+  cursor: pointer;
+  z-index: 10;
+  color: #FF4C0D;
+}
+.about-the-product__infomration .about-the-product__infomration__p {
+  width: 100%;
+  padding-top: 24px;
+  font-size: 16px;
+  border-top: 5px solid #FF4C0D;
+}
+
+.about-the-product__img {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.about-the-product__img .about-the-product__img__one {
+  z-index: 3;
+  float: left;
+  margin-left: 0;
+  margin-right: auto;
+}
+.about-the-product__img .about-the-product__img__two {
+  z-index: 1;
+  float: right;
+  margin-left: auto;
+  margin-right: 50px;
+  margin-top: -100px;
+}
+
+.path {
+  position: absolute;
+  z-index: 2;
+  float: right;
+  margin-left: 610px;
+  margin-top: 20px;
+}
+
+.delimiter {
+  z-index: 5;
+  width: 1920px;
+  height: 800px;
+  margin-top: 120px;
+  margin-left: -60px;
+  background: url("../img/background-img.svg") center/cover no-repeat;
+}
+.delimiter .delimiter__logo__img {
+  margin-top: 190px;
+  margin-left: 103px;
+}
+.delimiter .delimiter__text {
+  margin-left: 103px;
+  margin-top: 180px;
+  color: #F1F1F1;
+}
+.delimiter .delimiter__text .delimiter__title {
+  width: 800px;
+  font-size: 60px;
+  font-family: "Gilroy-Medium", sans-serif;
+}
+.delimiter .delimiter__text .delimiter__subtitle {
+  width: 600px;
+  margin-top: 10px;
+  font-size: 24px;
+  font-family: "Gilroy-Light", sans-serif;
+}
+
+.scooter-design__section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.scooter-design__section .scooter-design__title {
+  width: 1150px;
+  margin-left: 50px;
+  margin-right: auto;
+  font-size: 45px;
+  font-family: "Gilroy-Medium", sans-serif;
+  color: #151515;
+}
+.scooter-design__section .scooter-design__pictures {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.safety__section {
+  margin-top: 110px;
+  margin-left: 50px;
+  margin-right: auto;
+  font-family: "Gilroy-Medium", sans-serif;
+}
+.safety__section .safety__title {
+  width: 1400px;
+  font-size: 45px;
+  color: #FF4C0D;
+}
+.safety__section .safety__links {
+  font-family: "Gilroy-Medium", sans-serif;
+}
+.safety__section .safety__infomration__p {
+  font-family: "Gilroy-Light", sans-serif;
+}
+
+.safety__infomration {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: 50px;
+}
+.safety__infomration .safety__links {
+  z-index: 10;
+  font-size: 24px;
+  text-decoration: underline;
+  text-underline-offset: 27px;
+  text-decoration-thickness: 5px;
+  cursor: pointer;
+  color: #FF4C0D;
+}
+.safety__infomration .safety__infomration__p {
+  width: 100%;
+  padding-top: 24px;
+  font-size: 16px;
+  border-top: 5px solid #FF4C0D;
+}
+
+.safety__img {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.safety__img .safety__img__one {
+  z-index: 3;
+  float: left;
+  margin-left: 0;
+  margin-right: auto;
+}
+.safety__img .safety__img__two {
+  z-index: 1;
+  float: right;
+  margin-left: auto;
+  margin-right: 50px;
+  margin-top: -100px;
+}
+
+.mobile-app__section {
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Gilroy-Regular", sans-serif;
+}
+.mobile-app__section .mobile-app__information {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+.mobile-app__section .mobile-app__title {
+  width: 650px;
+  font-size: 45px;
+  color: #FF4C0D;
+}
+.mobile-app__section .mobile-app__text {
+  width: 460px;
+  font-size: 20px;
+  margin-top: -50px;
+  color: #151515;
+}
+.mobile-app__section .mobile-app__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 460px;
+}
+.mobile-app__section .mobile-app__form .mobile-app__google-play__button {
+  width: 200px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  background-image: url("../img/google-play_badge.svg");
+  background-size: cover;
+}
+.mobile-app__section .mobile-app__form .mobile-app__app-store__button {
+  width: 200px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  background-image: url("../img/app-store_badge.svg");
+  background-size: cover;
+}
+
+.swiper {
+  width: 1200px;
+  height: 700px;
+  background-color: chocolate;
+}/*# sourceMappingURL=mi-electro.css.map */
