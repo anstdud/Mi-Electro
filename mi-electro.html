@@ -5,11 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Mi Electro</title>
 	<link rel="stylesheet" type="text/css" href="scss/mi-electro.css">
+    <script src="mi-electro.js" type="text/javascript" defer></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="mi-electro.js" type="text/javascript"></script>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header id="header" class="header">
@@ -20,65 +18,36 @@
                 </div>
                 <ul class="main-nav__list">
                   <li class="main-nav__item">
-                    <a href="about-the-product__section" class="main-nav__link">О продукте</a>
+                    <a href="#about-the-product__section" class="main-nav__link">О продукте</a>
                   </li>
                   <li class="main-nav__item">
-                    <a href="scooter-design__section" class="main-nav__link">Внешний вид</a>
+                    <a href="#scooter-design__section" class="main-nav__link">Внешний вид</a>
                   </li>
                   <li class="main-nav__item">
-                    <a href="safety__section" class="main-nav__link">Безопасность</a>
+                    <a href="#safety__section" class="main-nav__link">Безопасность</a>
                   </li>
                   <li class="main-nav__item">
                     <a href="#" class="main-nav__link">Отзывы</a>
-                  </li>
-                  <li class="main-nav__item">
-                    <a href="#" class="main-nav__link">FAQ</a>
                   </li>
                 </ul>
                 <div class="nav-menu__button">
                     <button class="nav-menu__button-buy">Купить</button>
                 </div>
-              </nav>
-            <!-- <nav class="nav-menu">
-                <div class="nav-menu__logo">
-                    <img src="img/logo.svg" alt="logo_xiaomi">
-                </div>
-                <div class="nav-menu__link">
-                    <ul>
-                        <li><a href="#" class="link">О продукте</a></li>
-                        <li><a href="#" class="link">Внешний вид</a></li>
-                        <li><a href="#" class="link">Безопасность</a></li>
-                        <li><a href="#" class="link">Отзывы</a></li>
-                        <li><a href="#" class="link">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="nav-menu__button">
-                    <button class="nav-menu__button-buy">Купить</button>
-                </div>
-            </nav> -->
+            </nav>
         </div>
     </header>
     
     <main>
         <div class="container">
             <section id="main__section" class="main__section">
-                <div class="main__scooter-in-light-theme__img">
-                    <img src="img/scooter-in-light.svg" alt="scooter_in_main_view">
-                </div>
-                <!-- <section class="main-view-scooter-in-dark-theme__img">
-                    <img src="img/scooter-in-dark.svg" alt="scooter_in_main_view">
-                </section> -->
                 <div class="main__information">
                     <div class="main__text">
                         <h1 class="main__title">Стильный электросамокат с мощным аккумулятором</h1>
                         <p class="main__subtitle">Улучшенная производительность для дальних путешествий. Работает так же просто, как и выглядит.</p>
                     </div>
-                    <!-- <div class="main__text">
-                        <p class="main__text__p">Улучшенная производительность для дальних путешествий. Работает так же просто, как и выглядит.</p>
-                    </div> -->
-                    <div class="main__button">
-                        <button id="themeToggle">Переключить тему</button>
-                    </div>
+                </div>
+                <div class="main__scooter__img">
+                    <img src="img/scooter-in-light.svg" alt="scooter_in_main_view">
                 </div>
             </section>
             <section id="about-the-product__section" class="about-the-product__section">
@@ -88,7 +57,7 @@
                 <aside class="about-the-product__infomration">
                     <div class="about-the-product__speed">
                         <a href="#" class="about-the-product__links">Три режима скорости</a>
-                        <p class="about-the-product__infomration__p">Три режима езды позволяют почуствовать себя комфортно в любой ситуации. Режим «S» увеличитвает скорость, если опаздываете на работу.  Во время прогулки по парку активируйте режим «D». Включите режим «Пешеход», когда двигаетесь по оживлённой улице.</p>
+                        <p class="about-the-product__infomration__p">Три режима езды позволяют почуствовать себя комфортно в любой ситуации. Режим «S» увеличитвает скорость, если опаздываете на работу. Во время прогулки по парку активируйте режим «D». Включите режим «Пешеход», когда двигаетесь по оживлённой улице.</p>
                     </div>
                     <div class="about-the-product__energy">
                         <a href="#" class="about-the-product__links">Система восстановления энергии</a>
@@ -98,16 +67,16 @@
                         <a href="#" class="about-the-product__links">Мощная батарея</a>
                         <p class="about-the-product__infomration__p">Самокат оснащен аккумулятором емкостью 12 800 мАч. Это позволяет преодолевать расстояния до 45 км без подзарядки.</p>
                     </div>
+                    <div class="about-the-product__img">
+                        <img class="about-the-product__img__one" src="img/one-img-for-secod-block.svg" alt="img">
+                        <img class=" about-the-product__img__two" src="img/two-img-for-secod-block.svg" alt="img">
+                        <img class="about-the-product__img__three" src="img/three-img-for-secod-block.svg" alt="img">
+                    </div>
                 </aside>
-                <div class="about-the-product__img">
-                    <img class="about-the-product__img__one" src="img/one-img-for-secod-block.svg" alt="img">
-                    <img class="about-the-product__img__two" src="img/two-img-for-secod-block.svg" alt="img">
-                    <img class="about-the-product__img__path path" src="img/path.svg" alt="img">
-                </div>
             </section>
             <article class="delimiter">
                 <div class="delimiter__logo__img">
-                    <img src="img/wight-logo.svg" alt="logo">
+                    <img class="delimiter__subtitle" src="img/wight-logo.svg" alt="logo">
                 </div>
                 <div class="delimiter__text">
                     <h3 class="delimiter__title">Высокая скорость передвижения</h3>
@@ -119,9 +88,8 @@
                     <h2 class="scooter-design__title__h">Лаконичный современный дизайн, в котором нет ничего лишнего</h2>
                 </div>
                 <div class="scooter-design__pictures">
-                    <img src="img/design.svg" alt="design">
-                    <img src="img/control-panel.svg" alt="control-panel">
-                    <img class="scooter-design__img__path path" src="img/path.svg" alt="img">
+                    <img class="scooter-design__pictures__img__one" src="img/design.svg" alt="design">
+                    <img class="scooter-design__pictures__img__two" src="img/control-panel.svg" alt="control-panel">
                 </div>
             </section>
             <section id="safety__section" class="safety__section">
@@ -147,9 +115,10 @@
                     </div>
                 </aside>
                 <div class="safety__img">
-                    <img class="safetyt__img__one" src="img/flashlight-one.svg" alt="img">
-                    <img class="safety__img__two" src="img/flashlight-two.svg" alt="img">
-                    <img class="safety__img__path path" src="img/path.svg" alt="img">
+                    <img class="safetyt__img__one" src="img/safety__running-light__img.svg" alt="img">
+                    <img class="safety__img__two" src="img/safety__brake-system__img.svg" alt="img">
+                    <img class="safety__img__three" src="img/safety__rear-light__img.svg" alt="img">
+                    <img class="safety__img__four" src="img/safety__reflectors__img.svg" alt="img">
                 </div>
             </section>
             <article class="mobile-app__section">
@@ -162,10 +131,10 @@
                     </div>
                     <div class="mobile-app__form">
                         <form class="mobile-app__google-play" action="https://play.google.com/store/apps/details?id=com.xiaomi.smarthome&pcampaignid=web_share" target="_blank">
-                            <button class="mobile-app__google-play__button"></button>
+                            <button class="mobile-app__but mobile-app__google-play__button"></button>
                         </form>
                         <form class="mobile-app__app-store" action="https://apps.apple.com/ru/app/xiaomi-home/id957323480?l=en-GB" target="_blank">
-                            <button class="mobile-app__app-store__button"></button>
+                            <button class="mobile-app__but mobile-app__app-store__button"></button>
                         </form>
                     </div>
                 </div>
@@ -178,24 +147,77 @@
                     <h2 class="reviews__title__h">Отзывы о Mi Scooter Pro 2</h2>
                 </div>
                 <div class="swiper">
-                    <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
-                      <!-- Slides -->
-                      <div class="swiper-slide">Михаил Сафонов</div>
-                      <div class="swiper-slide">Имя скрыто</div>
-                      <div class="swiper-slide">Алексей З.</div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide__title">
+                            <h5>Михаил Сафонов</h5>
+                        </div>
+                        <div class="swiper-slide__delimiter"></div>
+                        <div class="swiper-slide__comment-text">
+                            <p>Выбирал между двумя моделями: этим Mi Scooter Pro 2 и Ninebot Max 30P, в плюсах Макса - десятидюймовая резина и дальность пробега на одном заряде, скорость зарядки. В плюсах Xiaomi - Удобства переноски (вес аппарата, развесовка).
+                                В итоге купил Xiaomi и поставил 10 дюймовые шины - получил комфорт при небольшом весе самоката.
+                            </p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide__title">
+                            <h5>Имя скрыто</h5>
+                        </div>
+                        <!-- <div class="swiper-slide__delimiter" style="width: 200px; height: 4px; color: #151515;"></div> -->
+                        <div class="swiper-slide__comment-text">
+                            <p>Владею также первой версией самоката (m365). В версии pro 2 исправлено множество недостатков m365:
+                                - усилен узел складывания и язычок
+                                - батарея находится в отдельном жёстком алюминиевом корпусе, что исключает её поломку из-за тряски
+                                - установлена поддержка заднего крыла и защита провода заднего габарита.
+                            </p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide__title">
+                            <h5>Алексей З.</h5>
+                        </div>
+                        <div class="swiper-slide__delimiter"></div>
+                        <div class="swiper-slide__comment-text">
+                            <p>Мой вес 57кг, прошитый с максимальной 32км в час в режиме S по Москве у меня осилил - 25км и еще оставалось 16% заряда.
+                                ОБЯЗАТЕЛЬНО: следите за давлением в камерах. Прям очень советую купить электронный насос от Xiaomi, и раз в неделю подкачивайте. С завода самокат приезжает с сильно недокачанными
+                            </p>
+                        </div>
+                      </div>
                     </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-                  
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                  
-                    
+                    <div class="swiper-button-prev" style="background-color: #E0E0E0;"></div>
+                    <div class="swiper-button-next" style="background-color: #FF4C0D"></div>
                 </div>
+                <div class="reviews__button">Оставить отзыв</div>
             </section>
         </div>
     </main>
+    <footer>
+        <div class="container">
+            <section class="footer__section">
+                <div class="footer__information__text">
+                    <p class="footer__information__text__p">© 2010 - 2021 Xiaomi. </br> Все права защищены.</p>
+                </div>
+                <div class="footer__information__working-hours">
+                    <p class="footer__information__working-hours__p">8 800 775 66 15 </br> Часы работы с 9:00 до 20:00 МСК, Пн. – Пт.</p>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module">
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            slidesPerView: 3,
+            spaceBetween: 1,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            // modules: [Navigation, Keyboard],
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 </html>
