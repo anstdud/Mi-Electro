@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../fonts/Gilroy-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("../fonts/Gilroy-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("../fonts/Gilroy-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1800px;
+  margin: 0 auto;
+}
+
+body {
+  position: relative;
+  width: 1920px;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-size: 32px;
+  background-image: linear-gradient(220deg, hsl(16, 100%, 53%) 0%, hsl(15, 100%, 59%) 9%, hsl(16, 100%, 64%) 16%, hsl(16, 100%, 68%) 23%, hsl(17, 100%, 73%) 30%, hsl(17, 100%, 78%) 38%, hsl(17, 100%, 83%) 47%, hsl(16, 100%, 87%) 58%, hsl(15, 76%, 91%) 73%, hsl(0, 0%, 95%) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  position: fixed;
+  top: 20px;
+  z-index: 100;
+  display: grid;
+  grid-template-columns: repeat(3, 10% 60% 30%);
+  grid-template-rows: 1fr;
+  width: 1700px;
+  height: 85px;
+  line-height: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: "Gilroy-Light", sans-serif;
+  background-color: #E0E0E0;
+  border-radius: 40px;
+}
+nav .nav-menu__logo {
+  width: 80px;
+  height: 85px;
+  padding-left: 20px;
+}
+nav .main-nav__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 85px;
+  margin-top: -5px;
+  margin-bottom: 0;
+  font-size: 22px;
+  text-underline-offset: 10px;
+}
+nav .main-nav__list .main-nav__item {
+  list-style-type: none;
+}
+nav .main-nav__list .main-nav__item .main-nav__link {
+  text-decoration: none;
+  font-weight: 400;
+  color: #151515;
+}
+
+.nav-menu__button {
+  height: 85px;
+  float: right;
+  margin-right: 0;
+  margin-left: auto;
+  margin-top: -10px;
+  font-family: "Gilroy-Medium", sans-serif;
+}
+.nav-menu__button .nav-menu__button-buy {
+  width: 170px;
+  height: 85px;
+  font-size: 18px;
+  background-color: #F1F1F1;
+  border-style: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.reviews__section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  margin-top: 225px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Gilroy-Regular", sans-serif;
+}
+.reviews__section .reviews__form {
+  grid-area: 1/2/2/3;
+}
+.reviews__section .reviews__form .reviews__title {
+  font-size: 40px;
+  font-family: "Gilroy-Medium", sans-serif;
+  color: #151515;
+}
+.reviews__section .reviews__block__textarea {
+  width: 600px;
+  height: 300px;
+  resize: none;
+  padding: 20px;
+  font-size: 26px;
+  border-radius: 40px;
+}
+.reviews__section .reviews__block__input {
+  width: 200px;
+  height: 50px;
+  margin-top: 40px;
+  font-size: 18px;
+  background-color: #F1F1F1;
+  border-style: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.footer__section {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin-top: 225px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 20px;
+  font-family: "Gilroy-Regular", sans-serif;
+  color: #151515;
+}
+.footer__section .footer__information__text {
+  width: 300px;
+  text-align: left;
+}
+.footer__section .footer__information__working-hours {
+  width: 500px;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+}/*# sourceMappingURL=reviews.css.map */
