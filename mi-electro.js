@@ -12,7 +12,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 const callback = () => {
-    window.open("reviews-mi-electro.html");
+    window.open("reviews-mi-electro.html", "_self");
 };
 const button = document.querySelector('#reviews__button__bt');
 button.addEventListener('click', callback);
